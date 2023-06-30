@@ -30,8 +30,6 @@ douyin-miniprogram-plugin
 - 通过IDE搜索并找到**Douyin mini program support**插件安装
 - 下载[发行版](https://github.com/sugood/douyin-miniprogram-plugin/releases)附件中的jar文件，在IDE中选择从磁盘安装
 
-插件版本和IDE版本的对应可以在[插件官网](https://plugins.jetbrains.com/plugin/13396-wechat-mini-program-support/versions)找到
-
 使用
 ---
 通过IDE打开抖音小程序项目即可使用全部功能

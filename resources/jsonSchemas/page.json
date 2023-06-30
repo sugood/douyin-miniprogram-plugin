@@ -1,0 +1,88 @@
+{
+  "title": "JSON schema for the Douyin mini program app configuration file",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "navigationBarBackgroundColor": {
+      "type": "string",
+      "description": "Navigation bar background color"
+    },
+    "navigationBarTextStyle": {
+      "type": "string",
+      "description": "Navigation bar title color",
+      "default": "white",
+      "enum": [
+        "white",
+        "black"
+      ]
+    },
+    "navigationBarTitleText": {
+      "type": "string",
+      "description": "Navigation title text"
+    },
+    "navigationStyle": {
+      "type": "string",
+      "default": "default",
+      "description": "Navigation bar style",
+      "enum": [
+        "default",
+        "custom"
+      ]
+    },
+    "backgroundColor": {
+      "type": "string",
+      "default": "#ffffff",
+      "description": "Background color of window"
+    },
+    "backgroundTextStyle": {
+      "type": "string",
+      "description": "Drop-down loading styles",
+      "default": "dark"
+    },
+    "enablePullDownRefresh": {
+      "type": "boolean",
+      "default": false,
+      "description": "Whether to enable the current page drop-down refresh"
+    },
+    "disableScroll": {
+      "type": "boolean",
+      "default": false,
+      "description": "When set to true, the entire page cannot scroll up and down."
+    },
+    "disableSwipeBack": {
+      "type": "boolean",
+      "default": false,
+      "description": "Disable page right swipe gestures to return"
+    },
+    "onReachBottomDistance": {
+      "type": "number",
+      "description": "The distance from the bottom of the page when the page pull-up bottom event is triggered, the unit is px.",
+      "default": 50
+    },
+    "usingComponents": {
+      "type": "object",
+      "description": "Global custom component",
+      "patternProperties": {
+        ".+": {
+          "type": "string",
+          "description": "The path of component"
+        }
+      }
+    },
+    "hideRecordMenuButton": {
+      "type": "boolean",
+      "default": false,
+      "description": "Whether to hide the \"Pat Douyin\" button in the upper right corner menu bar."
+    },
+    "hideAnchorButton": {
+      "type": "boolean",
+      "default": false,
+      "description": "Whether to hide the \"Add to video/Add this page to Live\" button for all scenes."
+    },
+    "hideAnchorButtonConfig": {
+      "type": "object",
+      "default": "default",
+      "description": "The \"Add to Video/Add this Page to Live\" button can be hidden for specific scenes. This field takes effect when hideAnchorButton is false"
+    }
+  }
+}

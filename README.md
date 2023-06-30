@@ -35,3 +35,7 @@ douyin-miniprogram-plugin
 使用
 ---
 通过IDE打开抖音小程序项目即可使用全部功能
+
+其他
+---
+感谢 [wechat-miniprogram-plugin](https://plugins.jetbrains.com/plugin/13396-wechat-mini-program-support),代码在此插件的基础上修改
